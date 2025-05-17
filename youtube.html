@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="YouTube Clone - Codi Academy" />
+    <meta name="keywords" content="YouTube, Clone, Codi Academy, HTML, CSS, JavaScript" />
+    <meta name="author" content="Codi Academy" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#FF0000" />
+    <meta property="og:title" content="YouTube Clone - Codi Academy" />
+    <meta property="og:description" content="Um clone do YouTube desenvolvido com HTML, CSS e JavaScript." />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+   <link rel="shortcut icon" href="./images/logo-youtube.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="header">
+
+    <div class="logo">
+      <img src="./images/logo.png" alt="Logo">
+    </div>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Pesquisar">
+      <button><span class="material-symbols-outlined">search</span></button>
+    </div>
+    <div class="menu-btn" onclick="toggleSidebar()">
+      <span class="material-symbols-outlined">menu</span>
+    </div>
+    <div class="header-icons">
+      <span class="material-symbols-outlined">video_call</span>
+      <span class="material-symbols-outlined">notifications</span>
+      <img src="./images/logomarca.png" alt="Avatar">
+    </div>
+  
+  </header>
+
+  <aside class="sidebar">
+    <ul>
+      <!-- Seção: Principal -->
+      <li><span class="material-symbols-outlined">home</span><span class="text">Início</span></li>
+      <li><span class="material-symbols-outlined">explore</span><span class="text">Explorar</span></li>
+      <li><span class="material-symbols-outlined">subscriptions</span><span class="text">Inscrições</span></li>
+      <li><span class="material-symbols-outlined">video_library</span><span class="text">Biblioteca</span></li>
+      <li><span class="material-symbols-outlined">history</span><span class="text">Histórico</span></li>
+      <li><span class="material-symbols-outlined">smart_display</span><span class="text">Seus vídeos</span></li>
+      <li><span class="material-symbols-outlined">watch_later</span><span class="text">Assistir mais tarde</span></li>
+      <li><span class="material-symbols-outlined">thumb_up</span><span class="text">Vídeos marcados com gostei</span></li>
+
+      <hr />
+
+      <!-- Seção: Explorar -->
+      <li><span class="material-symbols-outlined">local_fire_department</span><span class="text">Em alta</span></li>
+      <li><span class="material-symbols-outlined">music_note</span><span class="text">Música</span></li>
+      <li><span class="material-symbols-outlined">sports_esports</span><span class="text">Jogos</span></li>
+      <li><span class="material-symbols-outlined">newspaper</span><span class="text">Notícias</span></li>
+      <li><span class="material-symbols-outlined">trophy</span><span class="text">Esportes</span></li>
+
+      <hr />
+
+      <!-- Seção: Mais do YouTube -->
+      <li><span class="material-symbols-outlined">play_circle</span><span class="text">YouTube Premium</span></li>
+      <li><span class="material-symbols-outlined">stadia_controller</span><span class="text">YouTube Games</span></li>
+      <li><span class="material-symbols-outlined">live_tv</span><span class="text">YouTube Ao Vivo</span></li>
+
+      <hr />
+
+      <!-- Seção: Configurações -->
+      <li><span class="material-symbols-outlined">settings</span><span class="text">Configurações</span></li>
+      <li><span class="material-symbols-outlined">flag</span><span class="text">Histórico de denúncias</span></li>
+      <li><span class="material-symbols-outlined">help</span><span class="text">Ajuda</span></li>
+      <li><span class="material-symbols-outlined">feedback</span><span class="text">Enviar feedback</span></li>
+    </ul>
+  </aside>
+
+  <main class="videos">
+    <!-- Exemplo de vídeo -->
+    <div class="video">
+      <img src="./images/thumb1.jpg" alt="Thumb">
+      <span>30:07</span>
+      <h3>Aprenda Python AGORA com esse vídeo</h3>
+      <p>  Codi Academy • 1,2 mi visualizações • há 2 dias</p>
+    </div>
+     <div class="video">
+      <img src="./images/thumb2.jpg" alt="Thumb">
+        <span>05:07</span>
+      <h3>Entenda oque são chamados NFTs</h3>
+      <p>  Codi Academy • 70 visualizações • há 1 hora atrás</p>
+    </div>
+     <div class="video">
+      <img src="./images/thumb3.jpg" alt="Thumb">
+      <span>2:23:56</span>
+      <h3>Aulão | Criando game River Raid na Unity</h3>
+      <p>  Codi Academy • 300 visualizações • Ao-vivo</p>
+    </div>
+     <div class="video">
+      <img src="./images/thumb4.jpg" alt="Thumb">
+      <span>1:03:00</span>
+      <h3>Recriando o Aplicativo Doulingo com HTML, CSS e JS</h3>
+      <p>  Codi Academy • 250 visualizações • há 4 semanas atrás</p>
+    </div>
+     <div class="video">
+      <img src="./images/thumb5.jpg" alt="Thumb">
+      <span>1:02:06</span>
+      <h3>Criando uma Tela de Login com HTML E CSS</h3>
+      <p>  Codi Academy • 400 visualizações • há 3 dias atrás</p>
+    </div>
+     <div class="video">
+      <img src="./images/thumb6.jpg" alt="Thumb">
+      <span>50:23</span>
+      <h3>Criando um game de plataforma com HTML, CSS e JS</h3>
+      <p> Codi Academy • 1.230 visualizações • há 2 messes atrás</p>
+    </div>
+     <div class="video">
+      <img src="./images/thumb7.jpg" alt="Thumb">
+      <span>1:30:28</span>
+      <h3>Recriando um Game Street Fighter 2 no Construct 2</h3>
+      <p>  Codi Academy• 3.036 mil visualizações • há 4 messes atrás</p>
+    </div>
+     <div class="video">
+      <img src="./images/thumb8.jpg" alt="Thumb">
+      <span>1:04:45</span>
+      <h3>Aprenda Pixel Art em apenas 1 hora com o Piskel</h3>
+      <p>  Codi Academy • 1.345 mil visualizações • há 4 messes atás</p>
+    </div>
+  </main>
+
+  <script src="./youtube.js"></script>
+</body>
+</html>
